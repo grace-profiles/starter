@@ -1,0 +1,10 @@
+Grace Profiles encapsulate project commands, templates, and plugins.
+
+`starter` is a Grace profile for Getting Start to create anything you like.
+
+It will create only one file `README.md`, but you can use your own https://github.com/grace-templates[Application Templates] to create whatever you want.
+
+[source, bash]
+----
+$ grace create-app com.example.myapp --profile=starter --template=http://example.com/your-template.git
+----

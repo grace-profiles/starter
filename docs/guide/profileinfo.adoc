@@ -1,0 +1,18 @@
+You can always get information about the provided command and available features executing
+`grace profile-info starter`
+
+You will see an output similar to:
+
+[source, bash]
+----
+Profile: starter
+Version: 2023.3.0
+--------------------------------------------------------------------------------
+Profile for getting start to create anything you like
+
+Provided Commands:
+--------------------------------------------------------------------------------
+
+Provided Features:
+--------------------------------------------------------------------------------
+----
