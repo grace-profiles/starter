@@ -105,14 +105,6 @@ function addJsClass(el) {
 <div class="paragraph">
 <p><code>starter</code> is a Grace profile for Getting Start to create anything you like.</p>
 </div>
-<div class="paragraph">
-<p>It will create only one file <code>README.md</code>, but you can use your own <a href="https://github.com/grace-templates">Application Templates</a> to create whatever you want.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">$ grace create-app com.example.myapp --profile=starter --template=http://example.com/your-template.git</code></pre>
-</div>
-</div>
 
 
 <h1 id="upgrade"><a class="anchor" href="#upgrade"></a>2 Upgrade</h1>
@@ -174,15 +166,46 @@ $ git diff</code></pre>
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="bash">Profile: starter
 Version: 2023.3.0
---------------------------------------------------------------------------------
-Profile for getting start to create anything you like
+Extends:
+Description: Profile for getting start to create anything you like
 
 Provided Commands:
---------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Name                           Description
+----------------------------------------------------------------------------------------------------
 
 Provided Features:
---------------------------------------------------------------------------------</code></pre>
+----------------------------------------------------------------------------------------------------
+Name                           Required  Defaults  Description
+----------------------------------------------------------------------------------------------------</code></pre>
 </div>
+</div>
+<div class="paragraph">
+<p>As you see that, <code>starter</code> doesn&#8217;t provides any commands and features, but you can use <a href="https://github.com/grace-templates">Application Templates</a>.</p>
+</div>
+<div class="paragraph">
+<p>Application Templates are as same as the templates in the profile, but it allow to use Groovy scripts.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">$ grace create-app com.example.myexample \
+--profile=starter \
+--template=https://github.com/grace-templates/your-template.git</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>In Grace 2024.0, <code>starter</code> profile will generate a minimal app for you, same as <code>grace create-app com.example.myexample --minimal</code>.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 
 
