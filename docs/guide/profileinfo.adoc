@@ -7,12 +7,32 @@ You will see an output similar to:
 ----
 Profile: starter
 Version: 2023.3.0
---------------------------------------------------------------------------------
-Profile for getting start to create anything you like
+Extends:
+Description: Profile for getting start to create anything you like
 
 Provided Commands:
---------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Name                           Description
+----------------------------------------------------------------------------------------------------
 
 Provided Features:
---------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Name                           Required  Defaults  Description
+----------------------------------------------------------------------------------------------------
 ----
+
+As you see that, `starter` doesn't provides any commands and features, but you can use https://github.com/grace-templates[Application Templates].
+
+Application Templates are as same as the templates in the profile, but it allow to use Groovy scripts.
+
+[source, bash]
+----
+$ grace create-app com.example.myexample \
+--profile=starter \
+--template=https://github.com/grace-templates/your-template.git
+----
+
+[NOTE]
+====
+In Grace 2024.0, `starter` profile will generate a minimal app for you, same as `grace create-app com.example.myexample --minimal`.
+====
