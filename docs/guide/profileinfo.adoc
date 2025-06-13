@@ -3,7 +3,7 @@ You can always get information about the provided command and available features
 
 You will see an output similar to:
 
-[source, bash]
+[source,console]
 ----
 Profile: starter
 Version: 2023.3.0
@@ -25,7 +25,7 @@ As you see that, `starter` doesn't provides any commands and features, but you c
 
 Application Templates are as same as the templates in the profile, but it allow to use Groovy scripts.
 
-[source, bash]
+[source,console]
 ----
 $ grace create-app com.example.myexample \
 --profile=starter \
