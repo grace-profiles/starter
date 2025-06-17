@@ -9,7 +9,7 @@ For further reference, please consider the following sections:
 * [Spring Web](https://docs.spring.io/spring-boot/3.3/reference/web/index.html)
 * [Groovy Documentation](https://groovy-lang.org/documentation.html)
 * [Spock Reference Documentation](https://spockframework.org/spock/docs/2.3/index.html)
-* [The Book Of Geb](https://gebish.org/manual/current/)
+* [The Book Of Geb](https://groovy.apache.org/geb/manual/current/)
 
 ### Guides
 
@@ -27,6 +27,7 @@ For further reference, please consider the following sections:
 [Grace Plugins](https://github.com/grace-plugins/) repository contains several plugins to develop applications more easier and productive.
 
 * [Grace Asset Pipeline Plugin](https://github.com/grace-plugins/grace-asset-pipeline) is a plugin used for managing and processing static assets in Grace applications.
+* [Grace Async and Events](https://github.com/graceframework/grace-async) provides asynchronous, parallel programming, Events APIs, which integrate Grace with various asynchronous libraries and frameworks such as GPars and RxJava.
 * [Grace Cache](https://github.com/graceframework/grace-cache) provides powerful and easy to use caching functionality to Grace applications and plugins.
 * [Grace Data Hibernate](https://github.com/graceframework/grace-data-hibernate) provides a GORM implementation for Hibernate ORM.
 * [Grace Data MongoDB](https://github.com/graceframework/grace-data-mongodb) provides a GORM implementation for the MongodB Document Database.
