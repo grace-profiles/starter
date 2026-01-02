@@ -2,7 +2,7 @@ description: Profile for getting start to create anything you like
 build:
     plugins:
         - war
-        - org.graceframework.grace-web
+        - org.graceframework.grace-app
     excludes:
         - org.graceframework.grace-core
 dependencies:
