@@ -1,1 +1,16 @@
-description: Profile for getting start to create anything you like 
+description: Profile for getting start to create anything you like
+build:
+    plugins:
+        - war
+        - org.graceframework.grace-web
+    excludes:
+        - org.graceframework.grace-core
+dependencies:
+    - scope: console
+      coords: "org.graceframework:grace-console"
+    - scope: compile
+      coords: "org.graceframework:grace-boot"
+    - scope: compile
+      coords: "org.graceframework:grace-boot-plugin"
+    - scope: compile
+      coords: "org.springframework.boot:spring-boot-starter-web"
