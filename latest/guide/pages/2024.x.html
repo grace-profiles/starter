@@ -2,7 +2,7 @@
                       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-    <title>3 Upgrade 2024.0.0-M1</title>
+    <title>2.1 What's new in 2024.x 2024.0.0-M1</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" href="../css/main.css" type="text/css" media="screen, print" title="Style" charset="utf-8"/>
     <link rel="stylesheet" href="../css/pdf.css" type="text/css" media="print" title="PDF" charset="utf-8"/>
@@ -34,23 +34,23 @@ function addJsClass() {
         <ul>
             <li>
                 <div id="nav-summary" onmouseover="toggleNavSummary(false)" onmouseout="toggleNavSummary(true)">
-                    <a href="../guide/index.html" class="button">Table of contents</a>
+                    <a href="../../guide/index.html" class="button">Table of contents</a>
 
                     <div id="nav-summary-childs" style="display:none;">
                         
-                        <div class="toc-item" style="margin-left:0"><a href="../guide/introduction.html"><strong>1</strong><span>Introduction</span></a>
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/introduction.html"><strong>1</strong><span>Introduction</span></a>
                         </div>
                         
-                        <div class="toc-item" style="margin-left:0"><a href="../guide/releases.html"><strong>2</strong><span>Release History</span></a>
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/releases.html"><strong>2</strong><span>Release History</span></a>
                         </div>
                         
-                        <div class="toc-item" style="margin-left:0"><a href="../guide/upgrade.html"><strong>3</strong><span>Upgrade</span></a>
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/upgrade.html"><strong>3</strong><span>Upgrade</span></a>
                         </div>
                         
-                        <div class="toc-item" style="margin-left:0"><a href="../guide/profileinfo.html"><strong>4</strong><span>Profile Info</span></a>
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/profileinfo.html"><strong>4</strong><span>Profile Info</span></a>
                         </div>
                         
-                        <div class="toc-item" style="margin-left:0"><a href="../guide/support.html"><strong>5</strong><span>Support</span></a>
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/support.html"><strong>5</strong><span>Support</span></a>
                         </div>
                         
                     </div>
@@ -71,18 +71,18 @@ function addJsClass() {
             <div id="main" class="corner-all">
 
                 
-                    <div class="toc-item prev-left"><a href="../guide/releases.html">&lt;&lt; <strong>2</strong><span>Release History</span></a></div>
+                    <div class="toc-item prev-left"><a href="../../guide/introduction.html">&lt;&lt; <strong>1</strong><span>Introduction</span></a></div>
                 
 
                 <span id='toggle-col1' class="toggle">(<a href="#" onclick="localToggle(); return false;">Quick Reference</a>)</span>
 
                 
-                    <div class="toc-item next-right"><a href="../guide/profileinfo.html"><strong>4</strong><span>Profile Info</span> >></a></div>
+                    <div class="toc-item next-right"><a href="../../guide/upgrade.html"><strong>3</strong><span>Upgrade</span> >></a></div>
                 
 
 
                 <div class="project">
-                    <h1>3 Upgrade</h1>
+                    <h1>2.1 What's new in 2024.x</h1>
 
                     <p><strong>Version:</strong> 2024.0.0-M1</p>
                 </div>
@@ -91,50 +91,108 @@ function addJsClass() {
 
                 
 
-<h1 id="upgrade"><a class="anchor" href="#upgrade"></a>3 Upgrade</h1>
+<h2 id="2024.x"><a class="anchor" href="#2024.x"></a>2.1 What's new in 2024.x</h2>
 
 <div class='contribute-btn'>
-    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grace-profiles/starter/edit/2024.0.x/docs/guide/upgrade.adoc"'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grace-profiles/starter/edit/2024.0.x/docs/guide/releases/2024.x.adoc"'>
         <i class='fa fa-pencil-square-o'></i> Improve this doc
     </button>
 </div>
 
 
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-Currently, Grace framework does not provide a direct <code>upgrade</code> command, but it may offer this in the future.
-</td>
-</tr>
-</table>
+<div class="sect2">
+<h3 id="_2024_0_0_m1">2024.0.0-M1</h3>
+<div class="paragraph">
+<p><a href="https://github.com/grace-profiles/starter/releases/tag/v2024.0.0-M1">release notes</a></p>
 </div>
 <div class="paragraph">
-<p>The simplest way is to create two different versions of a new application, and then compare the differences between the two versions using the <code>git-diff</code> command.</p>
+<p>⭐️ New Features</p>
 </div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="console">$ sdk use grace 2024.0.0-M1
-$ grace -v
-$ grace create-app com.example.myapp --profile=starter --grace-version=2023.3.0
-$ cd myapp
-$ git init && git add . && git commit -m "Generated by Grace 2023.3.0"
-$ cd ..
-$ grace create-app com.example.myapp --profile=starter --force
-$ cd myapp
-$ git diff</code></pre>
+<div class="ulist">
+<ul>
+<li>
+<p>Update profile: provide minimal dependencies</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>🛠 Improvements</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Add release notes for 2024.0.0-M1</p>
+</li>
+<li>
+<p>Update guides for profile info and upgrade</p>
+</li>
+<li>
+<p>Update doc.properties and switch to 2024.0.x branch</p>
+</li>
+<li>
+<p>Fix the links to Spring Boot 3.4</p>
+</li>
+<li>
+<p>Update README</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Update document links</p>
+</li>
+<li>
+<p>Update badge version of Grace</p>
+</li>
+<li>
+<p>Update supported versions</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Migrate to Central Portal OSSRH Staging API <a href="https://github.com/grace-profiles/starter/issues/26">#26</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>🚀 Dependency Upgrades</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Upgrade to Grace 2024.0.0-M1 <a href="https://github.com/grace-profiles/starter/issues/28">#28</a></p>
+</li>
+<li>
+<p>Upgrade to Grace Profile: Base 2024.0.0-M1 <a href="https://github.com/grace-profiles/starter/issues/30">#30</a></p>
+</li>
+<li>
+<p>Upgrade to Gradle 8.14.3 <a href="https://github.com/grace-profiles/starter/issues/29">#29</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>⚙️ Tasks</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Release v2024.0.0-M1</p>
+</li>
+<li>
+<p>Update GitHub workflows - Switch to 2024.0.x</p>
+</li>
+<li>
+<p>Next development version: 2024.0.0-SNAPSHOT</p>
+</li>
+</ul>
 </div>
 </div>
 
 
                 <div style="clear:both;margin-top:15px;"></div>
                 
-                    <div class="toc-item prev-left"><a href="../guide/releases.html">&lt;&lt; <strong>2</strong><span>Release History</span></a></div>
+                    <div class="toc-item prev-left"><a href="../../guide/introduction.html">&lt;&lt; <strong>1</strong><span>Introduction</span></a></div>
                 
-                    <div class="toc-item next-right"><a href="../guide/profileinfo.html"><strong>4</strong><span>Profile Info</span> >></a></div>
+                    <div class="toc-item next-right"><a href="../../guide/upgrade.html"><strong>3</strong><span>Upgrade</span> >></a></div>
                 
                 <div style="clear:both"></div>
             </div>
@@ -142,7 +200,7 @@ $ git diff</code></pre>
         <td id="col2">
             <div class="local clearfix">
                 <div class="local-title">
-                    <a href="../guide/index.html" target="mainFrame">Quick Reference</a>
+                    <a href="../../guide/index.html" target="mainFrame">Quick Reference</a>
                     <span class="toggle">(<a href="#" onclick="localToggle(); return false;">hide</a>)</span>
                 </div>
                 <div class="menu">
