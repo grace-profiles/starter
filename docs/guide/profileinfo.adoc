@@ -3,10 +3,10 @@ You can always get information about the provided command and available features
 
 You will see an output similar to:
 
-[source,console]
+[source,console,subs="attributes"]
 ----
 Profile: starter
-Version: 2023.3.0
+Version: {version}
 Extends:
 Description: Profile for getting start to create anything you like
 
